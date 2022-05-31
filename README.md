@@ -19,8 +19,13 @@ gcloud functions deploy ibm_lamb_supplementary --entry-point=ibm_lamb_supplement
 ##to test functions try running this in python:
 
 import helpers as hlp
+
 hlp.ping_cloud_function("https://us-central1-gcp-wow-pvc-grnstck-prod.cloudfunctions.net/ibm_lamb_abattoir_constraints", {'scenario_name':'TEST'})
+
 hlp.ping_cloud_function("https://us-central1-gcp-wow-pvc-grnstck-prod.cloudfunctions.net/ibm_lamb_livestock", {'scenario_name':'TEST'})
+
 hlp.ping_cloud_function("https://us-central1-gcp-wow-pvc-grnstck-prod.cloudfunctions.net/ibm_lamb_member_properties", {'scenario_name':'TEST'})
+
 hlp.ping_cloud_function("https://us-central1-gcp-wow-pvc-grnstck-prod.cloudfunctions.net/ibm_lamb_processing_fees", {'scenario_name':'TEST'})
+
 hlp.ping_cloud_function("https://us-central1-gcp-wow-pvc-grnstck-prod.cloudfunctions.net/ibm_lamb_supplementary", {'scenario_name':'TEST'})

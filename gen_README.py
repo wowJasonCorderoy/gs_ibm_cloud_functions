@@ -27,7 +27,8 @@ import helpers as hlp
 """
 
 for func in funcs2deploy:
-    readme_str = readme_str+f"""hlp.ping_cloud_function("https://us-central1-{PROJECT}.cloudfunctions.net/{func}", {{'scenario_name':'TEST'}})
+    readme_str = readme_str+f"""
+hlp.ping_cloud_function("https://us-central1-{PROJECT}.cloudfunctions.net/{func}", {{'scenario_name':'TEST'}})
 """
 
 print(readme_str)
