@@ -1,0 +1,6 @@
+numpy>=1.21
+pandas>=1.2
+tm1py>=1.0
+google-cloud-bigquery>=2.0
+pyarrow>=4.0
+regex>=2021.10.23
