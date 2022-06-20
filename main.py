@@ -186,7 +186,7 @@ def ibm_lamb_member_properties(request):
     for d_t in ['lamb_ibm_crm_attributes','lamb_ibm_time_attributes', 'lamb_ibm_product_attributes']:
         try: # if doesn't exist then don't error.
             client.query(f"""
-            DELETE FROM `{PROJECT}.{dataset_name}.{t_d}`
+            DELETE FROM `{PROJECT}.{dataset_name}.{d_t}`
             WHERE lower(scenario_name) = '""" + v_scenario_name + """'
             """)
         except:
