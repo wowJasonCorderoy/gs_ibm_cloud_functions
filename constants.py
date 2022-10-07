@@ -1,1 +1,6 @@
-PROJECT = 'gcp-wow-pvc-grnstck-prod'
+import helpers as hlp
+
+try:
+    PROJECT = hlp.get_project_id()
+except:
+    PROJECT = 'gcp-wow-pvc-grnstck-dev'
